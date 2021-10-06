@@ -1,0 +1,7 @@
+Initially we wanted to create an application for a daycare center, which will allow the parents to calculate the costs on how many times they will take their child to the daycare center per week and per day, to read the activities and the curriculum that their child will participate in and information about the daycare center.
+
+What we did is that we added html, css and javascript codes to our project in order to make our website appealing to the parents who will want to register the child, allow the parents to download the registration page, allow the parents to calculate the cost of sending their child to the daycare center per week and per day, and allow them to go to the enrollment and classes web page by clicking the dropdown buttons.
+
+After receiving our project feedback we decided to make changes to our project, instead of the parents downloading the registration form and filling in the information and submitting the completed form via email, they can complete the form online. So we created a web page for the application form in which the parents can complete the form and submit it online. We displayed the curriculum and activities information in table form, we also displayed how much will it cost for the  parents to take their child to the daycare center per week and per day in table form and how the tuition rates work.
+
+In our home page we added background color for the important aspects of the daycare center. All the web pages which have been mentioned were placed inside an HTML form in order to make our pages presentable

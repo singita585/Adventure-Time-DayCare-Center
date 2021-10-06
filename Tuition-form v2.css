@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/*This would be the entire height for the web page*/
+html, body {
+  min-height: 100%;
+}
+
+/*The basic structure of the the page will look*/
+body, div, form, input, select, textarea, p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #3a3a3a;
+  line-height: 22px;
+}
+
+ul {
+  /*This is to style the list*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4d84e2;
+
+}
+
+ul a,
+h3 {
+  /*This is used to style the points inside the list*/
+  float: left;
+  color: black;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4d84e2;
+}
+
+/*styling the h1 variable*/
+h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 32px;
+  color: #fff;
+  z-index: 2;
+}
+
+/*styling the testbox*/
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px;
+}
+
+/*styling the form*/
+form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 30px 0 #4d84e2;
+}
+
+/*setting up the banner*/
+.banner {
+  position: relative;
+  height: 210px;
+  background-image: url("img/logo1.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*this would be the banner after changing a few things*/
+.banner::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+p.top-info {
+  margin: 10px 0;
+}
+
+/*styling the input boxes and every input option*/
+input{
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+/*when hovered over, these items will turn blue */
+.item:hover p, .question:hover p, .question label:hover, input:hover::placeholder {
+  color: #4d84e2;
+}
+
+.item input:hover, .item select:hover, .item textarea:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 8px 0 #4d84e2;
+  color: #4d84e2;
+}
+
+.item {
+  position: relative;
+  margin: 10px 0;
+}
+
+
+.question span {
+  margin-left: 30px;
+}
+
+.btn-block {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*styling the buttons and when hovered over it will be blue*/
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #4d84e2;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4d84e2;
+}
+
+/*styling the tution boxes per child*/
+#tuition {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+#tuition td, #tuition th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tuition tr:nth-child(even) {
+  background-color: f2f2f2;
+}
+
+#tuition tr:hover {
+  background-color: #ddd;
+}
+
+/*styling the table*/
+#tuition th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4d84e2;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+}

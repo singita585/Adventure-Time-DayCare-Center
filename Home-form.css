@@ -1,0 +1,129 @@
+/*This would be the entire height for the web page*/
+html, body {
+  min-height: 100%;
+}
+
+/*The basic structure of the the page will look*/
+body, div, form, input{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #3a3a3a;
+  line-height: 22px;
+}
+
+ul {
+  /*This is to style the list*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4d84e2;
+
+}
+
+ul a,
+h3 {
+  /*This is used to style the points inside the list*/
+  float: left;
+  color: black;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4d84e2;
+}
+
+/*styling the h1 variable*/
+h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 32px;
+  color: #fff;
+  z-index: 2;
+}
+
+/*styling the h2 variable*/
+h2 {
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: left;
+}
+
+/*styling the testbox*/
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px;
+}
+
+/*styling the form*/
+form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 30px 0 #4d84e2;
+}
+
+/*setting up the banner*/
+.banner {
+  position: relative;
+  height: 210px;
+  background-image: url("img/logo1.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*this would be the banner after changing a few things*/
+.banner::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  margin-top: 0;
+}
+
+/*styling the main header*/
+.mainHeading, .heading {
+  text-align: center;
+}
+
+/*styling the overview section*/
+.overview {
+  position: relative;
+  right: 40px;
+}
+
+.typical-day {
+  position: relative;
+  left: 40px;
+}
+
+.preschool-day {
+  position: relative;
+  left: 40px;
+}
+
+.price {
+  position: relative;
+  left: 40px;
+}
+
+.sentence {
+  margin-top: 0;
+  text-align: left;
+}

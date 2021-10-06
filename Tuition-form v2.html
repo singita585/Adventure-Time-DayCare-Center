@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Adventure Time Daycare Centre</title>
+  <link rel="stylesheet" href="Tuition-form v2.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="testbox">
+    <form action="/">
+      <nav id="mainNav">
+        <!--- Quick navigation for the user --->
+        <ul class="listLinks">
+            <li>
+                <h3><a href="Home-form.html">Home</a></h3>
+            </li>
+            <li>
+                <h3><a href="Application.html">Enroll</a></h3>
+            </li>
+            <li>
+                <h3><a href="Tuition-form v2.html">Tuition</a></h3>
+            </li>
+            <li>
+                <h3><a href="Classes-form.html">Classes</a></h3>
+            </li>
+        </ul>
+    </nav>
+      <div class="banner">
+        <h1>Adventure Time Daycare Centre</h1>
+      </div>
+      <div class="item">
+        <!--- The table below shows the user the prices for each week or day --->
+        <table id="tuition">
+          <tr>
+            <th colspan="6">Tuition Rates</th>
+          </tr>
+          <tr>
+            <th>Program</th>
+            <th>Weekly Rate</th>
+            <th>Daily Rate</th>
+          </tr>
+          <tr>
+            <td>Younger Toddler</td>
+            <td>R180 per week</td>
+            <td>R50 per day</td>
+          </tr>
+          <tr>
+            <td>Older Toddler</td>
+            <td>R150 per week</td>
+            <td>R50 per day</td>
+          </tr>
+          <tr>
+            <td>Preschool</td>
+            <td>R140 per week</td>
+            <td>R50 per day</td>
+          </tr>
+          <tr>
+            <td>School Age</td>
+            <td>R130 per week</td>
+            <td>R50 per day</td>
+          </tr>
+        </table>
+      </div>
+      <h2 class="heading">How our tuition rates work</h2>
+      <p class="sentence">Depending on what age your child is the price will be slightly different.
+        Different kids need different things, as such younger kids like infants will take a bit more to take care of.
+        Please comply with our rules before submitting an application as prices should be paid in full by the end of the week.
+      </p>
+      <div class="row">
+        <div class="column">
+          <img src="Baby+sleeping.jpg" alt="young" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="paint.jpg" alt="older" style="width:100%">
+        </div>
+      </div> 
+      <h2 class="heading">Young Toddler</h2>
+      <p class="sentence">Young Toddlers will be a bit more expensive to take care of as they are very sensitive.
+        Diapers, bottles and wipes will be bought and the baby will be seen to.
+        Not to worry as each baby will be assigned their own bottle and cot.
+      </p>
+      <h2 class="heading">Older Toddlers</h2>
+      <p class="sentence">Older Toddlers will be a bit easier, but can still be a bit difficult to take care of.
+        They will need bottles and from time to time diapers too.
+      </p>
+
+      <div class="row">
+        <div class="column">
+          <img src="iStock-901208614.jpg" alt="young" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="school.jpg" alt="older" style="width:100%">
+        </div>
+      </div> 
+      <h2 class="heading">Preschool</h2>
+      <p class="sentence">Preschool children will be tended to with a range of activities, as this is the time where they start being the most active.
+        Crayons, colouring books, toys will be provided.
+      </p>
+      <h2 class="heading">School age</h2>
+      <p class="sentence">School age (or round about 6-8 year olds) will be the most playful of them all.
+        Toys, books and a range of activities will be provided.
+      </p>
+
+    </form>
+  </div>
+
+  <style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  </style>
+</body>
+
+</html>
