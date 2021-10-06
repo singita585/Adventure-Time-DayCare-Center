@@ -69,7 +69,7 @@ form {
 .banner {
   position: relative;
   height: 210px;
-  background-image: url("img/logo1.png");
+  background-image: url("logo1.png");
   background-size: cover;
   display: flex;
   justify-content: center;
