@@ -1,0 +1,3 @@
+DEPENDENCIES
+
+The dependencies that we used were html and CSS
