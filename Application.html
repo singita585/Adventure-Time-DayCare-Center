@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adventure Time Daycare Centre</title>
+  <link rel="stylesheet" href="Application.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+
+</head>
+
+<body>
+  <div class="testbox">
+    <form name="google-sheet" id="appForm">
+      <div class="banner">
+        <h1>Adventure Time Daycare Centre</h1>
+      </div>
+      <div class="item">
+        <p>Name of the child</p>
+        <div class="name-item">
+          <input type="text" name="First" id="first" placeholder="First" />
+          <input type="text" name="Last" id="last" placeholder="Last" />
+        </div>
+      </div>
+      <div class="item">
+        <p>child's starting date</p>
+        <input type="date" name="Startdate" id="strtdate" required />
+        <i class="fas fa-calendar-alt"></i>
+		</div>
+		<div class="item">
+        <p>Date of Birth</p>
+        <input type="date" name="Bdate" id="bdate" required />
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+
+      <div class="item">
+        <p>Name the Child responds to</p>
+        <div class="name-item">
+          <input type="text" name="Childname" id="name" placeholder="" />
+        </div>
+      </div>
+
+      <div class="item">
+        <p>Address</p>
+        <input type="text" name="Streetaddress" id="stradd" placeholder="Street address" />
+        <div class="city-item">
+          <select name="City" placeholder="City" id="city">
+		  <option value="">city</option>
+		  <option value="Bloemfontein">Bloemfontein</option>
+		  <option value="Cape Town">Cape Town</option>
+		  <option value="Durban">Durban</option>
+		  <option value="Johannesburg">Johannesburg</option>
+	      <option value="Pretoria">Pretoria</option>
+		  <option value="Polokwane">Polokwane</option>
+		  <option value="Port Elizabeth">Port Elizabeth</option>
+		  <option value="Mpumalanga">Mpumalanga</option>
+		  <option value="Eastern Cape">Eastern Cape</option>
+		  <option value="Secunda">Secunda</option>
+		  <option value="Makhanda">Makhanda</option>
+		  <option value="City of Ekurhuleni Metropolitan Municipality">City of Ekurhuleni Metropolitan Municipality</option>
+		</select>
+          <select name="Region" placeholder="Region" id="region">
+			<option value="">region</option>
+			<option value="Eastern Cape">Eastern Cape</option>
+			<option value="Gauteng">Gauteng</option>
+			<option value="KwaZulu Natal">KwaZulu Natal</option>
+			<option  value="Northen Cape">Northen Cape</option>
+			<option value="Western Cape">Western Cape</option>
+			</select>
+          <input type="text" name="Postalcode" placeholder="Postal / Zip code" id="postal" />
+          <input type="text" name="Phone" placeholder="Phone" id="phone" />
+        </div>
+      </div>
+
+      <div class="item">
+        <p>Person(s) with whom the child lives(adults and children)</p>
+        <input type="text" name="Guardianname" id="childlives"/>
+        <p>Phone</p>
+        <input type="text" name="Guardianphone" id="phoneS" />
+      </div>
+      <div class="item">
+        <p>Email</p>
+        <input type="text" name="Email" id="email"/>
+      </div>
+
+      <div class="item">
+        <p>Child's first language</p>
+       <select name="Firstlang" id="lang">
+        <option value="">-- Choose your language --</option>
+        <option value="Afrikaans">Afrikaans</option>
+        <option value="English">English</option>
+        <option value="Pedi">Pedi</option>
+        <option value="Sotho">Sotho</option>
+        <option value="Southern Ndebele">Southern Ndebele</option>
+        <option value="Swazi">Swazi</option>
+        <option value="Tsonga">Tsonga</option>
+        <option value="Tswana">Tswana</option>
+        <option value="Venda">Venda</option>
+        <option value="Xhosa">Xhosa</option>
+        <option value="Zulu">Zulu</option>
+      </select>
+      </div>
+      <div class="item">
+        <p>Other language</p>
+        <select name="Secondlang"  id="otherlang">
+        <option value="">-- Choose your language --</option>
+        <option value="Afrikaans">Afrikaans</option>
+        <option value="English">English</option>
+        <option value="Pedi">Pedi</option>
+        <option value="Sotho">Sotho</option>
+        <option value="Southern Ndebele">Southern Ndebele</option>
+        <option value="Swazi">Swazi</option>
+        <option value="Tsonga">Tsonga</option>
+        <option value="Tswana">Tswana</option>
+        <option value="Venda">Venda</option>
+        <option value="Xhosa">Xhosa</option>
+        <option value="Zulu">Zulu</option>
+       </select>
+
+      </div>
+
+      <h2><strong>Parent(s)/guardian</strong></h2>
+      <div class="item">
+        <p>Name</p>
+        <input type="text" name="Parentname" id="nameP" />
+        <p>Phone</p>
+        <input type="text" name="Parentphone" id="phoneP"/>
+      </div>
+      <div class="item">
+        <p>WorkPhone</p>
+        <input type="text" name="Workphone" id="workP"/>
+      </div>
+
+      <h2><strong>Parent(s)authorized to pick up the child and be contracted in case of emergency.These people should be available during hours of care.(include mother/father/guardian):</strong></h2>
+      <div class="item">
+        <p>Name</p>
+        <input type="text" name="Authorizedparent" placeholder=""  id="nameR"/>
+        <div class="item">
+          <p>Relationship to child</p>
+          <input type="text" name="Relationship" placeholder="" id="childR"/>
+        </div>
+
+          <div class="question">
+            <h2><strong>Has the child previously attended daycare/preschool?</strong>
+              <h2>
+                <div class="question-answer">
+				  <select name="Attendance" id="prev">
+				  <option value=""></option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+				</select>
+                </div>
+          </div>
+
+          <h2><strong>Does your child have</strong></h2>
+          <div class="question">
+            <p>A medical condition/concern?</p>
+            <div class="question-answer">
+              <select name="Medicalcondition" id="medical"/>
+			  	<option value=""></option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+				</select>
+            </div>
+            <div class="item" id="medicalYes">
+              <p>If yes, Please provide further information</p>
+              <textarea id="medicmsg" name="medicalmsg" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="question">
+            <p>Allergies?</p>
+            <div class="question-answer">
+              <Select name="Allergic" id="allergies"/>
+			  	<option value=""></option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+				</select>
+            </div>
+            <div class="item" id="allergiesYes">
+              <p>If yes, Please provide further information</p>
+              <textarea id="allergicmsg" name="allergicmsg" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="question">
+            <p>Asthma?</p>
+            <div class="question-answer">
+              <select name="Asthmachild" id="asthma"/>
+			  	<option value=""></option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+				</select>
+            </div>
+            <div class="item"  id="asthmaYes">
+              <p>If yes, Please provide further information</p>
+              <textarea id="asthmamsg" name="asthmamsg" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="question">
+            <p>Has your child had a seizure in the past year?</p>
+            <div class="question-answer">
+              <select name="Childseizure" id="seizure"/>
+			  <option value=""></option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+				</select>
+            </div>
+            <div class="item" id="seizureYes">
+              <p>If yes, Please provide further information</p>
+              <textarea id="seizuremsg" name="seizuremsg" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Food sensitivities?</p>
+            <div class="question-answer">
+              <select name="Foodsensitivities" id="foods"/>
+			      <option value=""></option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+				</select>
+            </div>
+            <div class="item" id="foodsYes">
+              <p>If yes, Please provide further information</p>
+              <textarea id="foodmsg" name="foodsmsg" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="item">
+            <p>Medication</p>
+            <input type="text" name="Medication" placeholder="" id="meds" />
+            <div class="item">
+              <p>Time Given</p>
+              <input type="text" name="Timegiven" placeholder="" id="time"/>
+            </div>
+            <div class="item" id="medR">
+              <p>Reason for Medication</p>
+              <textarea id="medmsg" name="Rmedmsg"  rows="3"></textarea>
+            </div>
+
+            <div class="btn-block">
+              <button type="submit" href="/">Apply</button>
+            </div>
+    </form>
+    </form>
+  </div>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz65MQ0v0ebfaFjJ6_FPYqwsWCK6xiiPH6g8rOsCL8rNe8k2qezXxATMXOX7xXYqV1m/exec' 
+  const form = document.forms['google-sheet']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	  .then(response => alert("Application has been submitted successfully, please go to the google sheet to see the result"))
+	  .catch(error => console.error('Error!', error.message))
+	  })
+  </script>
+</body>
+</html>
