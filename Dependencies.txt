@@ -1,3 +1,0 @@
-DEPENDENCIES
-
-The dependencies that we used were html, javascript, and firebase
